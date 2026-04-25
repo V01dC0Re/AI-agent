@@ -1,0 +1,20 @@
+[2026-04-26 00:53:43] [Clipboard AI Error] ValueError: Не задан OPENAI_API_KEY. Вставьте ключ в main.py в переменную OPENAI_API_KEY.
+Traceback (most recent call last):
+  File "C:\Users\John\AI-agent\main.py", line 56, in process_clipboard
+    result = analyzer.analyze(content)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\AI-agent\analyzer.py", line 184, in analyze
+    final_state = self.graph.invoke({"content": content})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Не задан OPENAI_API_KEY. Вставьте ключ в main.py в переменную OPENAI_API_KEY.
+During task with name 'summarize_text' and id '857a17c8-fb7c-15b0-1379-7dd1985a9d60'
+[2026-04-26 00:58:27] [Clipboard AI Error] AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-ezbFW***********************auL2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+Traceback (most recent call last):
+  File "C:\Users\John\AI-agent\main.py", line 56, in process_clipboard
+    result = analyzer.analyze(content)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\AI-agent\analyzer.py", line 184, in analyze
+    final_state = self.graph.invoke({"content": content})
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-ezbFW***********************auL2. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}
+During task with name 'explain_code' and id 'a964d973-0803-6115-257a-73f654de8396'
